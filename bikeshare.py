@@ -30,13 +30,13 @@ def get_filters():
  
 
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
-    day = ""
-    while day not in ["all", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]:
-        day  = input("Which day of week all, monday, tuesday, wednesday, thursday, friday, saturday, sunday?:\n")
-        day  = day.lower()
+    day_of_week = ""
+    while day_of_week not in ["all", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]:
+        day_of_week  = input("Which day of week all, monday, tuesday, wednesday, thursday, friday, saturday, sunday?:\n")
+        day_of_week  = day_of_week.lower()
 
     print('-'*40)
-    return city, month, day
+    return city, month, day_of_week
 
 
 def load_data(city, month, day):
